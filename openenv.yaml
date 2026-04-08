@@ -1,0 +1,18 @@
+name: customer-support-env
+version: "1.0"
+
+description: Environment for customer support email handling.
+
+tasks:
+  - classification
+  - extraction
+  - response
+
+entrypoints:
+  reset: /reset
+  step: /step
+  state: /state
+
+grader_endpoint: /grader
+baseline_endpoint: /baseline
+tasks_endpoint: /tasks  
